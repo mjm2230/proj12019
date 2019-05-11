@@ -19,6 +19,8 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 0.5fr 1fr 10fr 1fr);
+  width: 100vw;
+  height: 100vh;
 }
 
 #navbar {
