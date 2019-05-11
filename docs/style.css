@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+
+html,
+body {
+  margin: 5px;
+}
+
+.container>div {
+  align-items: center;
+  border: solid grey thin;
+  color: white;
+  display: flex;
+  font-size: 2rem;
+  font-family: 'Stylish', sans-serif;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 0.5fr 1fr 10fr 1fr);
+}
+
+#navbar {
+ grid-column: span 5;
+ background-color: #6EB4D1;
+}
+
+#sidebar {
+  writing-mode: vertical-rl;
+  grid-column: span 1;
+  grid-row: span 2;
+   background-color: #BD9391;
+}
+
+#title {
+  grid-column: span 4;
+  background-color: #91B7C7;
+}
+
+
+#content {
+  grid-column: span 4; 
+  display: block;
+  list-style-position: inside;
+  background-color: #6CBEED;
+}
+
+#footer {
+ grid-column: span 5;
+ font-size: 1.5em;
+ background-color: #ADBABD;
+}
+
+.picPortrait {
+  width: 300px;
+  height: auto;
+   margin: 70px;
+}
+
+.picHorizontal {
+  transform: rotate(90deg);
+  width: auto;
+  height: 300px;
+  margin: 70px;
+}
+
+.picHorizontal2 {
+  width: auto;
+  height: 300px;
+  margin: 70px;
+}
+
